@@ -29,7 +29,7 @@ fi
 echo "Checking for updates from the repository..."
 if [ ! -d "$REPO_DIR" ]; then
     echo "Repository directory $REPO_DIR does not exist. Cloning the repository..."
-    git clone -b $BRANCH https://github.com/kl5hz/ham-scripts.git "$REPO_DIR" || {
+    git clone -b $BRANCH https://github.com/thetechnicalham/ham-scripts.git "$REPO_DIR" || {
         echo "Failed to clone the repository. Exiting.";
         exit 1;
     }
